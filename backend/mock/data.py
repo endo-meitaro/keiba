@@ -1,0 +1,48 @@
+from models.schemas import Race, HorseEntry
+
+MOCK_RACES: list[Race] = [
+    Race(
+        race_id="202605030111",
+        race_name="東京スプリングカップ",
+        date="20260510",
+        place="東京",
+        course_type="芝",
+        distance=2000,
+        weather="晴",
+        track_condition="良",
+        entries=[
+            HorseEntry(umaban=1,  frame=1, horse_name="トウキョウスター",   jockey="ルメール",   trainer="藤沢和雄", age="牡4", weight=58.0, odds=2.1,  recent_form="11231"),
+            HorseEntry(umaban=2,  frame=2, horse_name="サクラチカラ",       jockey="川田将雅",   trainer="池江泰寿", age="牡5", weight=58.0, odds=8.5,  recent_form="32415"),
+            HorseEntry(umaban=3,  frame=3, horse_name="ゴールデンアロー",   jockey="武豊",       trainer="友道康夫", age="牡4", weight=58.0, odds=15.2, recent_form="52341"),
+            HorseEntry(umaban=4,  frame=3, horse_name="シルバーウィング",   jockey="デムーロ",   trainer="手塚貴久", age="牡4", weight=58.0, odds=4.3,  recent_form="21523"),
+            HorseEntry(umaban=5,  frame=4, horse_name="ダイヤモンドダスト", jockey="岩田望来",   trainer="角居勝彦", age="牡5", weight=58.0, odds=22.0, recent_form="43251"),
+            HorseEntry(umaban=6,  frame=5, horse_name="エメラルドストーム", jockey="松山弘平",   trainer="矢作芳人", age="牡4", weight=58.0, odds=35.0, recent_form="53124"),
+            HorseEntry(umaban=7,  frame=6, horse_name="ルビーサンライズ",   jockey="戸崎圭太",   trainer="国枝栄",   age="牡5", weight=58.0, odds=6.8,  recent_form="12342"),
+            HorseEntry(umaban=8,  frame=6, horse_name="パールムーン",       jockey="坂井瑠星",   trainer="木村哲也", age="牡4", weight=58.0, odds=18.5, recent_form="34521"),
+            HorseEntry(umaban=9,  frame=7, horse_name="オパールドリーム",   jockey="横山武史",   trainer="斎藤誠",   age="牡5", weight=58.0, odds=12.0, recent_form="21435"),
+            HorseEntry(umaban=10, frame=8, horse_name="アメジストウェーブ", jockey="福永祐一",   trainer="高野友和", age="牡4", weight=58.0, odds=9.5,  recent_form="31241"),
+        ],
+    ),
+    Race(
+        race_id="202605030211",
+        race_name="中山ダートチャレンジ",
+        date="20260510",
+        place="中山",
+        course_type="ダート",
+        distance=1800,
+        weather="曇",
+        track_condition="稍重",
+        entries=[
+            HorseEntry(umaban=1,  frame=1, horse_name="テイエムパワー",     jockey="デムーロ",   trainer="戸田博文", age="牡5", weight=57.0, odds=3.5,  recent_form="12231"),
+            HorseEntry(umaban=2,  frame=2, horse_name="コパノリッキー",     jockey="武豊",       trainer="村山明",   age="牡6", weight=57.0, odds=18.0, recent_form="43512"),
+            HorseEntry(umaban=3,  frame=3, horse_name="タービュランス",     jockey="川田将雅",   trainer="矢作芳人", age="牡4", weight=57.0, odds=5.2,  recent_form="21342"),
+            HorseEntry(umaban=4,  frame=3, horse_name="サンダーストーム",   jockey="ルメール",   trainer="藤沢和雄", age="牡5", weight=57.0, odds=2.8,  recent_form="11213"),
+            HorseEntry(umaban=5,  frame=4, horse_name="ブラックナイト",     jockey="岩田望来",   trainer="池江泰寿", age="牡4", weight=57.0, odds=12.5, recent_form="32451"),
+            HorseEntry(umaban=6,  frame=5, horse_name="グレートウォリアー", jockey="松山弘平",   trainer="友道康夫", age="牡5", weight=57.0, odds=25.0, recent_form="45231"),
+            HorseEntry(umaban=7,  frame=6, horse_name="ウィンドチェイサー", jockey="戸崎圭太",   trainer="角居勝彦", age="牡4", weight=57.0, odds=8.0,  recent_form="21234"),
+            HorseEntry(umaban=8,  frame=6, horse_name="ストームライダー",   jockey="坂井瑠星",   trainer="手塚貴久", age="牡5", weight=57.0, odds=40.0, recent_form="54321"),
+            HorseEntry(umaban=9,  frame=7, horse_name="ダスクティル",       jockey="横山武史",   trainer="国枝栄",   age="牡4", weight=57.0, odds=15.0, recent_form="31524"),
+            HorseEntry(umaban=10, frame=8, horse_name="モーニングスター",   jockey="福永祐一",   trainer="木村哲也", age="牡5", weight=57.0, odds=7.5,  recent_form="22131"),
+        ],
+    ),
+]
